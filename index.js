@@ -37,7 +37,7 @@ client.on("message", async message => {
 *ban(name) and reason
 *Developerbot-who create me??
 *help-this command
-*serverinfo - info about server`);
+*serverinfo - information on the server`);
    }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");

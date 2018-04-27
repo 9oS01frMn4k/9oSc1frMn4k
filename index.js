@@ -28,11 +28,11 @@ client.on("message", async message => {
   let args = messageArray.slice(1);
 
 if (cmd === `${prefix}developerbot`){
-  message.replay('𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139');
+  message.replay("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
  
   }
 if (cmd === `${prefix}invitebot`){
-  message.replay('Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot`);
+  message.replay("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
 });
   

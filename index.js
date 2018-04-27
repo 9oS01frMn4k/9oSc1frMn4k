@@ -106,7 +106,8 @@ if (cmd === `${prefix}say`){
   }
   if (`cmd === ${prefix}bot`){
 get Role('Bots')
-});
+  }
+  });
   
 
 client.login(process.env.BOT_TOKEN);

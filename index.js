@@ -27,15 +27,12 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-client.login('NDM4NzE4OTU3NDUzNTc0MTQ2.DcSsag.D7vQwdv_ELMewnL9O0lPzTsSd1M');client.on('message', msg => {
-  if (msg.content === '*Developerbot') {
-    msg.reply('𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139');
+if (cmd === `${prefix}developerbot`){
+  message.replay('𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139');
  
   }
-});
-client.login('NDM4NzE4OTU3NDUzNTc0MTQ2.DcSsag.D7vQwdv_ELMewnL9O0lPzTsSd1M');client.on('message', msg => {
-  if (msg.content === '*invitebot') {
-    msg.reply('https://discordapp.com/api/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot');
+if (cmd === `${prefix}invitebot`){
+  message.replay('https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot`);
  
   }
 

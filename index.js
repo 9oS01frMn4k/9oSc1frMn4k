@@ -27,12 +27,17 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-   if (cmd === `${prefix}Developerbot`){
-  message.reply(':ant:𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩:ant:#0139');
-   }
- if (cmd === `${prefix}invite`){
-   message.reply('Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot%27');
- }
+client.login('NDM4NzE4OTU3NDUzNTc0MTQ2.DcSsag.D7vQwdv_ELMewnL9O0lPzTsSd1M');client.on('message', msg => {
+  if (msg.content === '*Developerbot') {
+    msg.reply('𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139');
+ 
+  }
+});
+client.login('NDM4NzE4OTU3NDUzNTc0MTQ2.DcSsag.D7vQwdv_ELMewnL9O0lPzTsSd1M');client.on('message', msg => {
+  if (msg.content === '*invitebot') {
+    msg.reply('https://discordapp.com/api/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot');
+ 
+  }
 
   
 

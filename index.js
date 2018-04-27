@@ -27,7 +27,7 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
-  if (cmd === `${prefix}invitebot`){
+  if (cmd === `${prefix}help`){
  return message.channel.send("I want help you,but how?!");
   }
 if (cmd === `${prefix}Developerbot`){

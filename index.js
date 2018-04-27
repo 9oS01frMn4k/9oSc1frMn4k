@@ -104,9 +104,6 @@ if (cmd === `${prefix}say`){
 
     return;
   }
-  if (`cmd === ${prefix}bot`){
-get Role('Bots')
-  }
   });
   
 

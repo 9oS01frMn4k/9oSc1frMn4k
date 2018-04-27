@@ -33,11 +33,12 @@ client.on("message", async message => {
 
     message.author.send(`*say(text)- Antman say everything
 *invitebot-invite me!
-*kick(name) and reason
-*ban(name) and reason
 *Developerbot-who create me??
 *help-this command
-*serverinfo - information on the server`);
+*serverinfo - information on the server
+--MODERATION--
+*kick(name) and reason
+*ban(name) and reason`);
    }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");

@@ -26,16 +26,16 @@ client.on("message", async message => {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
-
+  
+  if (cmd === `${prefix}invitebot`){
+   message.reply('I want help you,but how?!');
+  }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
  
   }
 if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
-  }
-  if (cmd === `${prefix}invitebot`){
-   message.reply('I want help you,but how?!');
   }
 });
   

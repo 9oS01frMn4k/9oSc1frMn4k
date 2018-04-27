@@ -27,8 +27,8 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-if (cmd === `${prefix}developerbot`){
-  message.replay("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
+if (cmd === `${prefix}Developerbot`){
+ return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
  
   }
 if (cmd === `${prefix}invitebot`){

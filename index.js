@@ -32,7 +32,7 @@ if (cmd === `${prefix}Developerbot`){
  
   }
 if (cmd === `${prefix}invitebot`){
-  message.replay("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
+  return message.channel.send("Couldn't find reports channel.");("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
 });
   

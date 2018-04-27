@@ -35,7 +35,7 @@ if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
   if (cmd === `${prefix}invitebot`){
-   msg.reply('I want help you,but how?!');
+   message.reply('I want help you,but how?!');
 });
   
 

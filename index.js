@@ -32,7 +32,7 @@ if (cmd === `${prefix}developerbot`){
  
   }
 if (cmd === `${prefix}invitebot`){
-  message.replay('https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot`);
+  message.replay('Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot`);
  
   }
 });

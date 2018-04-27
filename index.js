@@ -44,24 +44,15 @@ if (cmd === `${prefix}say`){
   		.setDescription(args.join(" "));
   		message.channel.send({embed})
  }
-  if(cmd === `${prefix}sondage`){
-        if (message.member.hasPermission("MANAGE_MESSAGES")) {
-            let args = message.content.split(" ").slice(1);
-            let thingToEcho = args.join(" ")
-            if (!thingToEcho) return message.reply("Merci d'envoyer une question pour le sondage")
-            if (!message.guild.channels.find("name", "sondage")) return message.reply("Le channel sondage est introuvable. merci de crée ce channel pour que celui-ci marche.")
-            var embedeee = new Discord.RichEmbed()
-                .setDescription("Sondage")
-                .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
-                .setColor("0xB40404")
-                .setTimestamp()
-        message.channel.sendMessage("Votre sondage a bien été envoyé dans #sondage.")
-        message.guild.channels.find("name", "sondage").sendEmbed(embedeee)
-        .then(function (message) {
-            message.react(":white_check_mark:")
-            message.react(":x:")
-        }).catch(function() {
-        }
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return errors.noPerms(message, "MANAGE_MESSAGES");
+  if(!args[0]) return message.channel.send("oof");
+  message.channel.bulkDelete(args[0]).then(() => {
+    message.channel.send(Cleared ${args[0]} messages.).then(msg => msg.delete(5000));
+  });
+}
+
+module.exports.help = {
+  name: "clear"
 });
   
 

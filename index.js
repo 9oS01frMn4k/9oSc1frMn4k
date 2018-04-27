@@ -28,9 +28,7 @@ client.on("message", async message => {
   let args = messageArray.slice(1);
 
    if (cmd === `${prefix}Developerbot`){
-    msg.reply(':ant:𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩:ant:#0139');
- 
-  }
+  message.reply(':ant:𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩:ant:#0139');
    }
  if (cmd === `${prefix}invite`){
    message.reply('Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=438718957453574146&permissions=8&scope=bot%27');

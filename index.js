@@ -30,8 +30,8 @@ client.on("message", async message => {
   if (cmd === `${prefix}help`){
   message.reply('Check Your Dm Message :wink:');
 
-   message.author.send(`${prefix}serverinfo - info about the server\n\
-*say(text)- Antman say everything
+
+   message.author.send(`*say(text)- Antman say everything
 *invitebot-invite me!
 *kick(name) and reason
 *ban(name) and reason

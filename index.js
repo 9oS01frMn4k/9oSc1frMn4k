@@ -36,7 +36,8 @@ client.on("message", async message => {
 *kick(name) and reason
 *ban(name) and reason
 *Developerbot-who create me??
-*help-this command`);
+*help-this command
+*serverinfo - info about server`);
    }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
@@ -45,6 +46,20 @@ if (cmd === `${prefix}Developerbot`){
 if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
+   if(cmd === `${prefix}serverinfo`){
+
+    let sicon = message.guild.iconURL;
+    let serverembed = new Discord.RichEmbed()
+     .setDescription("Server Information")
+     .setColor("#15f153")
+     .setThumbnail(sicon)
+     .addField("Server Name", message.guild.name)
+     .addField("Created On", message.guild.createdAt)
+     .addField("Joined At", message.member.joinedAt)
+     .addField("Members Count", message.guild.memberCount);
+
+   return message.channel.send(serverembed);
+ }
 if (cmd === `${prefix}say`){
   		message.delete()
           const embed = new Discord.RichEmbed()

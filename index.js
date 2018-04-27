@@ -37,6 +37,13 @@ if (cmd === `${prefix}Developerbot`){
 if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
+  if (cmd === ${prefix}say){
+          message.delete()
+          const embed = new Discord.RichEmbed()
+          .setColor(0x954D23)
+          .setDescription(args.join(" "));
+          message.channel.send({embed})
+ }
 });
   
 

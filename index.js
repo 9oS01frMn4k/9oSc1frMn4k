@@ -44,7 +44,7 @@ if (cmd === `${prefix}say`){
   		.setDescription(args.join(" "));
   		message.channel.send({embed})
  }
-  if(cmd === `${prefix}sondage`);
+  if(cmd === `${prefix}sondage`){
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")

@@ -36,6 +36,7 @@ if (cmd === `${prefix}invitebot`){
   }
   if (cmd === `${prefix}invitebot`){
    message.reply('I want help you,but how?!');
+  }
 });
   
 

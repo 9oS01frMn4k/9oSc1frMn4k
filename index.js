@@ -122,6 +122,14 @@ if (cmd === `${prefix}say`){
 
     return;
   }
+  client.on('guildMemberAdd', member => {
+
+  console.log('user ' + member.username + ' has joined the server!')
+
+var role = member.guild.roles.find('name', 'user');
+
+member.addrole(role)
+}
   });
   
 

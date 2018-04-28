@@ -129,7 +129,6 @@ if (cmd === `${prefix}say`){
 var role = member.guild.roles.find('name', 'user');
 
 member.addrole(role)
-}
   });
   
 

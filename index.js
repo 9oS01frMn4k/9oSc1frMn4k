@@ -47,6 +47,14 @@ if (cmd === `${prefix}Developerbot`){
 if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
+  client.on('guildMemberAdd', member => {
+
+  console.log('user ' + member.username + ' has joined the server!')
+
+var role = member.guild.roles.find('name', 'user');
+
+member.addrole(role)
+}
    if(cmd === `${prefix}serverinfo`){
 
     let sicon = message.guild.iconURL;
@@ -122,13 +130,6 @@ if (cmd === `${prefix}say`){
 
     return;
   }
-  client.on('guildMemberAdd', member => {
-
-  console.log('user ' + member.username + ' has joined the server!')
-
-var role = member.guild.roles.find('name', 'user');
-
-member.addrole(role)
   });
   
 

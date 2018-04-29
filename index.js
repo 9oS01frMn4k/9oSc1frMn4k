@@ -110,7 +110,7 @@ if (cmd === `${prefix}say`){
   .setTitle("A Poll Has Been Started!")
   .setColor("#5599ff")
   .setDescription(`${question}`)
-  .setFooter(`Poll Started By: ${message.author.username}, ${message.author.avatarURL`})
+  .setFooter(`Poll Started By: `${message.author.username}`, `${message.author.avatarURL}`)
 
   message.channel.send({embed})
   message.react('נ‘')

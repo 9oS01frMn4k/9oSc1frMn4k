@@ -99,7 +99,7 @@ if (cmd === `${prefix}say`){
     return;
   }
 
-    //poll
+     //poll
   
     if (cmd === `${prefix}poll`){
     let question = args.slice(0).join(" ");
@@ -115,11 +115,12 @@ if (cmd === `${prefix}say`){
   
     message.channel.send({embed})
     message.react('נ‘')
-    .then(() => message.react(':thumbup:'))
-    .then(() => message.react(:thumbdown:'))
+    .then(() => message.react(''))
+    .then(() => message.react('))
     .catch(() => console.error('Emoji failed to react.'));
   
   }
+  
   
   
   

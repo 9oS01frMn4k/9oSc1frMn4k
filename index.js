@@ -99,7 +99,7 @@ if (cmd === `${prefix}say`){
     return;
   }
 
-  //poll
+    //poll
   
     if (cmd === `${prefix}poll`){
     let question = args.slice(0).join(" ");
@@ -114,12 +114,13 @@ if (cmd === `${prefix}say`){
     .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
   
     message.channel.send({embed})
-    message.react(':thumbup:‘:thumbdown:')
-    .then(() => message.react(':thumbup:'))
-    .then(() => message.react(':thumbdown'))
+    message.react('נ‘')
+    .then(() => message.react(''))
+    .then(() => message.react('))
     .catch(() => console.error('Emoji failed to react.'));
   
   }
+  
   
   
   if(cmd === `${prefix}ban`){

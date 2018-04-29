@@ -38,6 +38,7 @@ client.on("message", async message => {
 *Developerbot-who create me??
 *help-this command
 *serverinfo - information on the server
+*poll - create a poll :wink:
 --MODERATION--
 *kick(name) and reason
 *ban(name) and reason`);
@@ -105,7 +106,7 @@ if (cmd === `${prefix}say`){
     let question = args.slice(0).join(" ");
   
     if (args.length === 0)
-    return message.reply('**Invalid Format:** `/poll <Question>`')
+    return message.reply('**Invalid Format:** `*poll <Question>`')
   
   const embed = new Discord.RichEmbed()
     .setTitle("A Poll Has Been Started!")

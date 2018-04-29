@@ -100,7 +100,7 @@ if (cmd === `${prefix}say`){
 
 //poll
 
-  if (cmd === ${prefix}poll){
+  if (cmd === `${prefix}poll`){
   let question = args.slice(0).join(" ");
 
   if (args.length === 0)

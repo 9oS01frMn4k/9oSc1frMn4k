@@ -1,5 +1,7 @@
+const botconfig = require("./botconfig.json");
 const Discord = require('discord.js');
 const client = new Discord.Client();
+let purple = botconfig.purple;
 let xp = require("./xp.json");
 
 client.on('ready', () => {
@@ -174,6 +176,7 @@ if (cmd === `${prefix}say`){
   }
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
     if(err) console.log(err)
+  }
   });
   
 

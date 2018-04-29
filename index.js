@@ -123,7 +123,32 @@ if (cmd === `${prefix}say`){
 
     return;
   }
-   let xpAdd = Math.floor(Math.random() * 7) + 8;
+  if(!coins[message.author.id]){
+    coins[message.author.id] = {
+      coins: 0
+    };
+  }
+
+  let coinAmt = Math.floor(Math.random() * 15) + 1;
+  let baseAmt = Math.floor(Math.random() * 15) + 1;
+  console.log(`${coinAmt} ; ${baseAmt}`);
+
+  if(coinAmt === baseAmt){
+    coins[message.author.id] = {
+      coins: coins[message.author.id].coins + coinAmt
+    };
+  fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
+    if (err) console.log(err)
+  });
+  let coinEmbed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#0000FF")
+  .addField("", `${coinAmt} coins added!`);
+
+  message.channel.send(coinEmbed).then(msg => {msg.delete(5000)});
+  }
+
+  let xpAdd = Math.floor(Math.random() * 7) + 8;
   console.log(xpAdd);
 
   if(!xp[message.author.id]){
@@ -149,7 +174,18 @@ if (cmd === `${prefix}say`){
   }
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
     if(err) console.log(err)
-  }); 
   });
+  let prefix = prefixes[message.guild.id].prefixes;
+  if(!message.content.startsWith(prefix)) return;
+  if(cooldown.has(message.author.id)){
+    message.delete();
+    return message.reply("You have to wait 5 seconds between commands.")
+  }
+  if(!message.member.hasPermission("ADMINISTRATOR")){
+    cooldown.add(message.author.id);
+  }
+
+  });
+  
 
 client.login(process.env.BOT_TOKEN);

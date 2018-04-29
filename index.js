@@ -176,7 +176,7 @@ if (cmd === `${prefix}say`){
   }
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
     if(err) console.log(err)
-  }
+  });
   });
   
 

@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
+let purple = botconfig.purple;
 const botconfig = require("../botconfig");
+
 let xp = require("../xp.json");
 
 module.exports.run = async (bot, message, args) => {

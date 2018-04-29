@@ -115,9 +115,9 @@ if (cmd === `${prefix}say`){
     .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
   
     message.channel.send({embed})
-    message.react('נ‘')
-    .then(() => message.react('נ‘'))
-    .then(() => message.react('נ₪·'))
+    message.react('👍‘')
+    .then(() => message.react('👍‘👍'))
+    .then(() => message.react('👎₪👎·'))
     .catch(() => console.error('Emoji failed to react.'));
   
   }

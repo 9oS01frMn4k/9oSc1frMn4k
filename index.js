@@ -99,27 +99,25 @@ if (cmd === `${prefix}say`){
     return;
   }
 
-     //poll
-  
-    if (cmd === `${prefix}poll`){
-    let question = args.slice(0).join(" ");
-  
-    if (args.length === 0)
-    return message.reply('**Invalid Format:** `/poll <Question>`')
-  
+  if (cmd === ${prefix}poll){
+  let question = args.slice(0).join(" ");
+
+  if (args.length === 0)
+  return message.reply('Invalid Format: /Poll <Question>')
+
   const embed = new Discord.RichEmbed()
-    .setTitle("A Poll Has Been Started!")
-    .setColor("#5599ff")
-    .setDescription(`${question}`)
-    .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
-  
-    message.channel.send({embed})
-    message.react('נ‘')
-    .then(() => message.react(''))
-    .then(() => message.react(''))
-    .catch(() => console.error('Emoji failed to react.'));
-  
-  }
+  .setTitle("A Poll Has Been Started!")
+  .setColor("#5599ff")
+  .setDescription(${question})
+  .setFooter(Poll Started By: ${message.author.username}, ${message.author.avatarURL})
+
+  message.channel.send({embed})
+  message.react(':thumbsup:')
+  .then(() => message.react(':thumbsdown:'))
+  .then(() => message.react(':shrug:'))
+  .catch(() => console.error('Emoji failed to react.'));
+
+}
   
   
   

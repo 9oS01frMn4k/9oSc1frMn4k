@@ -99,14 +99,13 @@ if (cmd === `${prefix}say`){
     return;
   }
 
-//poll
-
- 
+  //poll
+  
     if (cmd === `${prefix}poll`){
     let question = args.slice(0).join(" ");
   
     if (args.length === 0)
-    return message.reply('**Invalid Format:** `*poll <Question>`')
+    return message.reply('**Invalid Format:** `/poll <Question>`')
   
   const embed = new Discord.RichEmbed()
     .setTitle("A Poll Has Been Started!")
@@ -115,12 +114,13 @@ if (cmd === `${prefix}say`){
     .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
   
     message.channel.send({embed})
-    message.react('👍‘')
-    .then(() => message.react('👍‘👍'))
-    .then(() => message.react('👎₪👎·'))
+    message.react('נ‘')
+    .then(() => message.react(''))
+    .then(() => message.react(''))
     .catch(() => console.error('Emoji failed to react.'));
   
   }
+  
   
   if(cmd === `${prefix}ban`){
 

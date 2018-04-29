@@ -109,8 +109,8 @@ if (cmd === `${prefix}say`){
   const embed = new Discord.RichEmbed()
   .setTitle("A Poll Has Been Started!")
   .setColor("#5599ff")
-  .setDescription(${question})
-  .setFooter(Poll Started By: ${message.author.username}, ${message.author.avatarURL})
+  .setDescription(`${question}`)
+  .setFooter(`Poll Started By: ${message.author.username}, ${message.author.avatarURL`})
 
   message.channel.send({embed})
   message.react('נ‘')

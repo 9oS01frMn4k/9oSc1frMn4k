@@ -1,7 +1,5 @@
-const botconfig = require("./botconfig.json");
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let purple = botconfig.purple;
 let xp = require("./xp.json");
 
 client.on('ready', () => {
@@ -125,32 +123,7 @@ if (cmd === `${prefix}say`){
 
     return;
   }
-  if(!coins[message.author.id]){
-    coins[message.author.id] = {
-      coins: 0
-    };
-  }
-
-  let coinAmt = Math.floor(Math.random() * 15) + 1;
-  let baseAmt = Math.floor(Math.random() * 15) + 1;
-  console.log(`${coinAmt} ; ${baseAmt}`);
-
-  if(coinAmt === baseAmt){
-    coins[message.author.id] = {
-      coins: coins[message.author.id].coins + coinAmt
-    };
-  fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
-    if (err) console.log(err)
-  });
-  let coinEmbed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#0000FF")
-  .addField("", `${coinAmt} coins added!`);
-
-  message.channel.send(coinEmbed).then(msg => {msg.delete(5000)});
-  }
-
-  let xpAdd = Math.floor(Math.random() * 7) + 8;
+ let xpAdd = Math.floor(Math.random() * 7) + 8;
   console.log(xpAdd);
 
   if(!xp[message.author.id]){
@@ -178,6 +151,5 @@ if (cmd === `${prefix}say`){
     if(err) console.log(err)
   });
   });
-  
 
 client.login(process.env.BOT_TOKEN);

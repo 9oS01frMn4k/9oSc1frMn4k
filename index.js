@@ -115,8 +115,8 @@ if (cmd === `${prefix}say`){
   
     message.channel.send({embed})
     message.react('נ‘')
-    .then(() => message.react(''))
-    .then(() => message.react(''))
+    .then(() => message.react(':thumbup:'))
+    .then(() => message.react(':thumbdown'))
     .catch(() => console.error('Emoji failed to react.'));
   
   }

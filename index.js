@@ -98,6 +98,27 @@ if (cmd === `${prefix}say`){
     return;
   }
 
+//poll
+
+  if (cmd === ${prefix}poll){
+  let question = args.slice(0).join(" ");
+
+  if (args.length === 0)
+  return message.reply('Invalid Format: /poll <Question>')
+
+  const embed = new Discord.RichEmbed()
+  .setTitle("A Poll Has Been Started!")
+  .setColor("#5599ff")
+  .setDescription(${question})
+  .setFooter(Poll Started By: ${message.author.username}, ${message.author.avatarURL})
+
+  message.channel.send({embed})
+  message.react('נ‘')
+  .then(() => message.react('נ‘'))
+  .then(() => message.react('נ₪·'))
+  .catch(() => console.error('Emoji failed to react.'));
+
+}
   if(cmd === `${prefix}ban`){
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));

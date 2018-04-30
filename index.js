@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const botconfig = require("./botconfig.json");
 let xp = require("./xp.json");
+let spotify = require("./spotify.js");
 
 client.on('ready', () => {
   console.log(`Bot is Online!`);

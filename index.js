@@ -120,7 +120,7 @@ if (cmd === `${prefix}say`){
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
-    const deleteCount = parseInt(args[0], 5);
+    const deleteCount = parseInt(args[0], 10);
     
     // Ooooh nice, combined conditions. <3
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)

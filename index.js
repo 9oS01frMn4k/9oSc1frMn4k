@@ -43,20 +43,6 @@ client.on("message", async message => {
 *kick(name) and reason
 *ban(name) and reason`);
    }
-  if (cmd === `${prefix}avatar`){
-      // Define user, if nobody is mentioned it will store author
-    let user = message.mentions.users.first() || message.author;
-    
-    // Form Embed
-    const embed = new Discord.MessageEmbed()
-        .setColor(0xffffff) // This will set the embed sidebar color
-        .setTitle(user.username) // This will set the embed title
-        .setImage(user.avatarURL({size: 2048})) // This will set the embed image
-        
-    // Send Message
-    message.channel.send(embed)
-    
-}
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
  

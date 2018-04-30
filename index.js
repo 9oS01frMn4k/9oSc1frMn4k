@@ -43,6 +43,7 @@ client.on("message", async message => {
 *kick(name) and reason
 *ban(name) and reason`);
    }
+  if (cmd === `${prefix}avatar`){
       // Define user, if nobody is mentioned it will store author
     let user = message.mentions.users.first() || message.author;
     

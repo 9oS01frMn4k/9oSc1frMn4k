@@ -34,14 +34,15 @@ client.on("message", async message => {
 
 
     message.author.send(`*say(text)- Antman say everything
-`*invitebot-invite me!`
-`*Developerbot-who create me??`
-`*help-this command`
-`*serverinfo - information on the server`
-`*poll - create a poll :wink:`
+*invitebot-invite me!
+*Developerbot-who create me??
+*help-this command
+*serverinfo - information on the server
+*poll - create a poll :wink:
 --MODERATION--
-`*kick(name) and reason`
-`*ban(name) and reason`);
+*kick(name) and reason
+*ban(name) and reason
+*clear - clear message`);
    }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");

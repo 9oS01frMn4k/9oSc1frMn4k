@@ -98,7 +98,9 @@ if (cmd === `${prefix}say`){
 
     return;
   }
-
+    if (cmd === `${prefix}joinvoice`) { 
+     join VoiceChannel
+    }
   if (cmd === `${prefix}poll`){
   let question = args.slice(0).join(" ");
 

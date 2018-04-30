@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const botconfig = require("./botconfig.json");
 let xp = require("./xp.json");
-let MusicBot = require("./MusicBot");
+
 
 client.on('ready', () => {
   console.log(`Bot is Online!`);

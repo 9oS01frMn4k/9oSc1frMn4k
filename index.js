@@ -42,8 +42,7 @@ client.on("message", async message => {
 *poll - create a poll :wink:
 --MODERATION--
 *kick(name) and reason
-*ban(name) and reason
-*clear - clear message`);
+*ban(name) and reason`);
    }
 if (cmd === `${prefix}Developerbot`){
  return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");

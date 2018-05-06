@@ -40,6 +40,7 @@ client.on("message", async message => {
 *help-this command
 *serverinfo - information on the server
 *poll - create a poll :wink:
+*avatar - avatar.. LOL
 --MODERATION--
 *kick(name) and reason
 *ban(name) and reason`);

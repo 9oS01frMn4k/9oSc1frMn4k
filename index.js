@@ -51,7 +51,7 @@ if (cmd === `${prefix}Developerbot`){
 if (cmd === `${prefix}invitebot`){
   return message.channel.send("Invite the bot to your server :wink: https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=0");
   }
-  {
+     if (cmd === `${prefix}dog`){
       const { body } = await superagent
     .get('https://dog.ceo/api/breeds/image/random');
     const embed = new Discord.RichEmbed()

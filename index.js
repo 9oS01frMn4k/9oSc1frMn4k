@@ -58,7 +58,7 @@ client.on("message", async message => {
 }
 
 if (cmd === `${prefix}Developerbot`){
- return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139");
+ return message.channel.send("𝙎𝙝𝙖𝙝𝙖𝙧 | 𝙏𝙝𝙚𝘼𝙣𝙩#0139 & 🌟𝑶𝒓𝒊 | 𝓝𝓲𝓬𝓮𝓖𝓪𝓶𝓮𝓼🌟⚒#2030");
  
   }
 if (cmd === `${prefix}invitebot`){
